@@ -1,0 +1,367 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+
+/* CSS FOR NAVBAR */
+
+ @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
+ .header1 {
+   font-family: "Montserrat", sans-serif;
+   color: #8d97ad;
+   font-weight: 300;
+ }
+
+ .container{
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .header1 h1,
+ .header1 h2,
+ .header1 h3,
+ .header1 h4,
+ .header1 h5,
+ .header1 h6 {
+   color: #3e4555;
+ }
+ 
+ .header1 .btn-outline-success {
+   color: #2cdd9b;
+   background-color: transparent;
+   border-color: #2cdd9b;
+ }
+ 
+ .header1 .btn-outline-success:hover {
+   background: #2cdd9b;
+   border-color: #2cdd9b;
+   color: #ffffff;
+ }
+ 
+ .header1 .font-12 {
+   font-size: 12px;
+ }
+ 
+ .header1 .dropdown-item {
+   padding: 8px 1rem;
+   color: #8d97ad;
+ }
+ 
+ .header1 .h1-nav .navbar-nav .nav-item .nav-link {
+   padding: 12px 0px;
+   color: #8d97ad;
+   font-weight: 400;
+ }
+ 
+ .header1 .h1-nav .navbar-nav .nav-item .nav-link:hover {
+   color: #2cdd9b;
+ }
+ 
+ .header1 .h1-nav .navbar-nav .nav-item {
+   margin: 0 20px;
+ }
+ 
+ h1 {
+  text-align: center;
+ }
+
+.logo_nav{
+  width: 10%;
+  margin-right: 150px;
+  margin-left: 50px;
+
+}
+
+/* CSS FOR LOGIN PAGE */
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.banner6 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner6 h1,
+.banner6 h2,
+.banner6 h3,
+.banner6 h4,
+.banner6 h5,
+.banner6 h6 {
+  color: #3e4555;
+}
+
+.banner6 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.banner6 a {
+  text-decoration: none;
+}
+
+.banner6 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.banner6 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
+
+.banner6 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px;
+}
+
+.banner6 .bg-facebook {
+  background-color: #3b5a9a;
+}
+
+.banner6 .bg-twitter {
+  background-color: #56adf2;
+}
+
+.banner6 .text-danger {
+  color: #ff4d7e !important;
+}
+
+.banner6 .right-image {
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+@media (max-width: 1023px) {
+  .banner6 .contact-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner6 .contact-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+	.banner6 .right-image {
+		position: relative;
+		bottom: -95px;
+	}
+}
+
+/* CSS FOR HOME PAGE */
+ 
+ .new_gossip_link{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+.link_gossip{
+    transition: 1s;
+
+}
+.link_gossip:hover{
+    text-decoration-color: rgb(143, 132, 243);
+    color: rgb(143, 132, 243);
+    transition: 1s;
+}
+
+ a{
+    text-decoration-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+ }
+
+ a:hover{
+    text-decoration-color: rgb(143, 132, 243);
+    color: rgb(143, 132, 243);
+    transition: 0.5s;
+ }
+
+ .bg-image{
+    background-image: url(/public/gossip_hero.jpg);
+ }
+
+
+ /* CSS FOR LOGIN PAGE */
+ .gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #30e9ab, #36b8d8, #0a94ca, #1c066b);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #30e9ab, #36b8d8, #0a94ca, #1c066b);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+
+.logo_login{
+  margin-top: -40px;
+  width: 30%;
+
+}
+
+
+ /* CSS FOR GOSSIP PAGE */
+
+ .text-align{
+    text-align: center;
+ }
+
+ .box_gossip{
+margin: auto;
+text-align: center;
+display: flex;
+align-items: center;
+ }
+
+ .container{
+    border-bottom: solid 1px lightgray;
+ }
+
+ .box_comment{
+    margin: auto;
+    text-align: left;
+    display: flex;
+     }
+
+
+     /*CSS FOR CONTACT PAGE */
+
+     @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+     .contact2 {
+       font-family: "Montserrat", sans-serif;
+       color: #8d97ad;
+       font-weight: 300;
+        padding: 60px 0;
+       margin-bottom: 170px;
+       background-position: center top;
+     }
+     
+     .contact2 h1,
+     .contact2 h2,
+     .contact2 h3,
+     .contact2 h4,
+     .contact2 h5,
+     .contact2 h6 {
+       color: #3e4555;
+     }
+     
+     .contact2 .font-weight-medium {
+       font-weight: 500;
+     }
+     
+     .contact2 .subtitle {
+       color: #8d97ad;
+       line-height: 24px;
+     }
+     
+     .contact2 .bg-image {
+       background-size: cover;
+       position: relative;
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+     }
+     
+     .contact2 .card.card-shadow {
+         -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+         box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+     }
+     
+     .contact2 .detail-box .round-social {
+       margin-top: 100px;
+     }
+     
+     .contact2 .round-social a {
+       background: transparent;
+       margin: 0 7px;
+       padding: 11px 12px;
+     }
+     
+     .contact2 .contact-container .links a {
+       color: #8d97ad;
+     }
+     
+     .contact2 .contact-container {
+       position: relative;
+       top: 200px;
+     }
+     
+     .contact2 .btn-danger-gradiant {
+       background: #ff4d7e;
+       background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+       background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+       background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+       background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+       background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+     }
+     
+      .contact2 .btn-danger-gradiant:hover {
+       background: #ff6a5b;
+       background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+       background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+       background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+       background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+       background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+     }
+
+
+
+/* CSS FOR GOSSIP PAGE */
+
+.resize_btn{
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.btn-group{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}

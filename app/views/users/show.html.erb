@@ -1,0 +1,9 @@
+<h1>Profil de l'identifiant : <%= @user.id %></h1>
+
+<p>Mon prénom : <%= @user.first_name %></p>
+<p>Mon nom : <%= @user.last_name %></p>
+<p>Ma ville : <%= link_to @user.city.name, city_path(@user.city) %></p>
+<p>Mon âge : <%= @user.age %></p>
+<p>Description : <%= @user.description %>
+<p>Mon adresse mail : <%= @user.email %></p>
+<p>Ma date d'inscription : <%= @user.created_at %></p>
